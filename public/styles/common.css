@@ -5,29 +5,50 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #542c85;
+    background-color: #121212;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    height: 35px;
 }
 
 .h1, form {
-    background-color: #6cbf5c;
-    color: white;
     padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .h1 {
-    color: black;
+    text-align: center;
+    width: 15rem;
+    background-color: #6cbf5c;
+    border-radius: 500px;
+    font-size: 30px;
+    color: #000000;
     margin-bottom: 20px;
+}
+
+p {
+    color: rgb(255, 0, 0);
+    font-size: 20px;
 }
 
 form {
     font-size: 20px;
     padding: 20px;
     gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 label {
+    color: white;
+}
+
+.register {
     color: white;
 }
 
@@ -42,8 +63,9 @@ button {
     background-color: #6cbf5c;
     color: white;
     padding: 12px;
+    width:  20rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 500px;
     cursor: pointer;
 }
 

@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="/styles/common.css">
 </head>
 <body>
+    <img class="logo" src="https://die-zoellner.de/wp-content/uploads/2019/04/spotify-logo-white-rgb-300x91.png" alt="">
+
     <h1 class="h1">Login</h1>
     <% if (messages.error) { %>
         <p><%= messages.error %></p>
     <% } %>
     <form action="/login" method="POST">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="name@domain.com" required>
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
+        <button class="register" type="submit">Login</button>
     </form>
     <a href="/register">Register</a>
 </body>
