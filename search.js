@@ -1,8 +1,8 @@
-const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem';
+const url = 'https://deezerdevs-deezer.p.rapidapi.com/genre/%7Bid%7D';
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'ffeee28345msh5c6941610732f11p142c84jsn084937dabdce',
+		'X-RapidAPI-Key': '117c9e5c0amsh4a0f429cd685938p1ed30djsndef3ba6f26d0',
 		'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
 	}
 };
