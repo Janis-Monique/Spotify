@@ -1,9 +1,9 @@
-const url = 'https://deezerdevs-deezer.p.rapidapi.com/genre/%7Bid%7D';
+const url = 'https://spotify23.p.rapidapi.com/genre_view/?id=0JQ5DAqbMKFEC4WFtoNRpw&content_limit=10&limit=20';
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'ffeee28345msh5c6941610732f11p142c84jsn084937dabdce',
-		'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
+		'X-RapidAPI-Key': '117c9e5c0amsh4a0f429cd685938p1ed30djsndef3ba6f26d0',
+		'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
 	}
 };
 
@@ -14,5 +14,3 @@ try {
 } catch (error) {
 	console.error(error);
 }
-
-
