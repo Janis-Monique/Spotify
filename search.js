@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displaySearchResults(data) {
         let content = '';
-
+        console.log(data);
         for (const result of data.data) {
             const artistPageURL = `https://www.deezer.com/artist/${result.artist.id}`;
             content += `
@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img src="${result.album.cover}" alt="">
                     <div class="header">Artist: ${result.artist.name}</div>
                     <div class="header">Title: ${result.title}</div>
+                    <div class="header">Album: ${result.album.title}</div>
                 </a>
             `;
         }
