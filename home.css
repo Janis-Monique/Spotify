@@ -175,3 +175,8 @@ body {
     border-radius: 40px;
     cursor: pointer;
 }
+
+.spotify-playlist {
+    color: white;
+    margin: 5px;
+}
