@@ -190,21 +190,34 @@
   .box {
     height: 11rem;
     width: 10rem;
-    border: 1px solid white;
+
   }
 
   .searchList {
     color: white;
 }
 
+.searchList a {
+    text-decoration: none;
+    color: white;
+}
+
 
 .box {
+    
       display: flex;
+      text-align: center;
       gap: .25rem;
       width: 50rem;
       height: 7rem;
       margin-top: 1rem;
   }
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
 
   input {
     font-size: 1rem;
