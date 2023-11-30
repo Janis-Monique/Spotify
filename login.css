@@ -1,0 +1,65 @@
+body {
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.sidebar {
+    background-color: #000000;
+}
+
+.sidebar .navigation ul li a {
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+    color: #ffffff;
+}
+
+.sidebar .policies ul li a {
+    color: #b3b3b3;
+    font-weight: 500;
+}
+
+.sidebar .policies ul li a:hover,
+.sidebar .policies ul li a:active,
+.sidebar .policies ul li a:focus {
+    text-decoration: underline;
+}
+
+.main-container {
+    background-color: #121212;
+}
+
+.topbar {
+    background-color: #101010;
+}
+
+.topbar .navbar ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus {
+    color: #ffffff;
+}
+
+.preview {
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    color: #ffffff;
+}
+
+.preview h6 {
+    font-weight: 400;
+}
+
+.preview button {
+    background-color: #ffffff;
+    color: #000000;
+}
