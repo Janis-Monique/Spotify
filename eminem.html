@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="#">
+                <img src="./img/Spotify-Logo-png-RGB-White.png" alt="Logo" />
+            </a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="home.html">
+                        <span class="fa fa-house" style="color: white;"></span>
+                        <span style="color: white;">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-search" style="color: white;"></span>
+                        <span style="color: white;">Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fas fa-book" style="color: white;"></span>
+                        <span style="color: white;">Album</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="fa fas fa-plus-square" style="color: white;"></span>
+                        <span style="color: white;">Create Playlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fas fa-heart" style="color: white;"></span>
+                        <span style="color: white;">Liked Songs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="policies">
+            <ul>
+                <li>
+                    <a href="#" style="color: white;">Cookies</a>
+                </li>
+                <li>
+                    <a href="#" style="color: white;">Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="topbar">
+            <div class="prev-next-buttons">
+                <button type="button" class="fa fas fa-chevron-left"></button>
+                <button type="button" class="fa fas fa-chevron-right"></button>
+            </div>
+            <div class="eminem">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEEog4YoXJzYUo7Wx9jObHePPbpiwMjCzyAA&usqp=CAU">
+                </a>
+            </div>
+        </div>
+        <div class="spotify-playlist">
+            <!-- Rest of your content goes here -->
+        </div>
+        <button>PREV</button>
+        <button>PLAY</button>
+        <button>NEXT</button>
+        <audio controls>
+            <source src="https://cdns-preview-a.dzcdn.net/stream/c-a8f59d5c41501a2a767a088d92946325-1.mp3">
+            <source2 src="https://cdns-preview-c.dzcdn.net/stream/c-cca63b2c92773d54e61c5b4d17695bd2-8.mp3">
+            <source3 src="https://cdns-preview-0.dzcdn.net/stream/c-04c2c479846725eec24a3f40e837d35e-16.mp3">
+            <source4 src="https://cdns-preview-d.dzcdn.net/stream/c-d56c95b55d8555bd7bb816d9518609d5-9.mp3">
+            <source5 src="https://cdns-preview-6.dzcdn.net/stream/c-655dfb802c35579d26a32136e3d0e7b3-12.mp3">
+        </audio>
+        <br><br>
+        <section class="tlist">
+            <table>
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>Title</td>
+                        <td> </td>
+                        <td>Album</td>
+                        <td>Date Added</td>
+                        <td>#</td>
+                    </tr>
+                </thead>
+                <tbody id="album-list">
+                    <!-- Song list content goes here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="https://kit.fontawesome.com/9f824db5ef.js" crossorigin="anonymous"></script>
+    <script src="genere.js"></script>
+    <script>
+        // Your additional scripts go here
+    </script>
+</body>
+</html>

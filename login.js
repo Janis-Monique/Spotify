@@ -1,28 +1,36 @@
+//login.js
+
 function submitForm(event) {
     event.preventDefault();
 
-    const usernameInput = document.getElementById('username');
-    const passwordInput = document.getElementById('password');
+    const { value: username } = document.getElementById('username');
+    const { value: password } = document.getElementById('password');
 
-    const username = usernameInput.value;
-    const password = passwordInput.value;
-
-    console.log('Entered username:', username);
-    console.log('Entered password:', password);
-
-    // Check if the entered username and password match any user
-    const user = users.find((user) => user.username === username && user.password === password);
-
-    console.log('User found:', user);
+    const users = getUsersFromStorage();
+    const user = users.find(u => u.username === username && u.password === password);
 
     if (user) {
         alert('Login successful!');
         saveUserAsJSON(user);
+        redirectToMainPage();
     } else {
         alert('Invalid username or password. Please try again.');
     }
 }
+
 function toggleForm() {
-    // Redirect to the register.html page
     window.location.href = 'register.html';
+}
+
+function saveUserAsJSON(user) {
+    const userJSON = JSON.stringify(user);
+    localStorage.setItem('currentUser', userJSON);
+}
+
+function getUsersFromStorage() {
+    return JSON.parse(localStorage.getItem('users')) || [];
+}
+
+function redirectToMainPage() {
+    window.location.href = 'home.html';
 }

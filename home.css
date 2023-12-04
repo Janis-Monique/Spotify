@@ -100,7 +100,7 @@ body {
     display:flex;
     align-items: center;
 }
-.tobar .navbar ul {
+.topbar .navbar ul {
     list-style: none;
 }
 .topbar .navbar ul li {

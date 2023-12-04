@@ -1,36 +1,43 @@
-// register.js
-
-const users = []; // Initialize an empty array to store registered users
+//register.js
 
 function submitForm(event) {
     event.preventDefault();
 
-    const usernameInput = document.getElementById('username');
-    const passwordInput = document.getElementById('password');
+    const { value: username } = document.getElementById('username');
+    const { value: password } = document.getElementById('password');
 
-    const username = usernameInput.value;
-    const password = passwordInput.value;
+    const users = getUsersFromStorage();
+    const user = users.find(u => u.username === username && u.password === password);
 
-    // Check if the username is already taken
-    const isUsernameTaken = users.some((user) => user.username === username);
-
-    if (isUsernameTaken) {
+    if (user) {
         alert('Username is already taken. Please choose another one.');
     } else {
-        // Add the new user to the array
-        users.push({ username, password });
+        const newUser = { username, password };
+        users.push(newUser);
         alert('Registration successful! You can now login.');
         clearForm();
+        saveUsersToStorage(users);
+        redirectToLogin();
     }
 }
 
+function toggleForm() {
+    window.location.href = 'login.html';
+}
+
+function redirectToLogin() {
+    window.location.href = 'login.html';
+}
+
 function clearForm() {
-    // Clear the form fields
     document.getElementById('username').value = '';
     document.getElementById('password').value = '';
 }
 
-function toggleForm() {
-    // Implement toggling logic if needed
-    window.location.href = 'login.html'
+function saveUsersToStorage(users) {
+    localStorage.setItem('users', JSON.stringify(users));
+}
+
+function getUsersFromStorage() {
+    return JSON.parse(localStorage.getItem('users')) || [];
 }
